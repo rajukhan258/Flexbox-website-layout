@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+p{
+    text-align: justify;
+}
+
+header {
+    /* border: 1px solid red; */
+    background: rgb(7, 188, 143);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header ul {
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: #fff;
+}
+
+#logo {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+#menu li {
+    padding: 10px;
+}
+
+#social-links li {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+#main {
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+article {
+    padding: 15px;
+}
+
+aside {
+    /* border: 2px solid red; */
+    padding: 10px;
+    flex: 0 0 20vw;
+    background-color: rgb(231, 231, 231);
+}
+
+aside ul {
+    /* border: 1px solid rgb(0, 72, 255); */
+    padding: 0;
+    margin: 0;
+}
+
+aside ul a {
+    /* border: 1px solid red; */
+    color: rgb(7, 188, 143);
+    display: block;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+aside img {
+    width: 100%;
+    /* margin: 10px; */
+}
+
+.service-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid #f90808; */
+    justify-content: space-between;
+}
+
+.service-box {
+    /* border: 1px solid #f90808; */
+    border: 1px solid #d8d7d7;
+    padding: 10px;
+    margin-bottom: 15px;
+    flex-basis: 32%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-box img {
+    /* border: 4px solid #000000; */
+    width: 100%;
+}
+
+.service-box h3 {
+    /* border: 2px solid #013704; */
+    margin: 5px 0 10px;
+}
+
+.service-box p {
+    /* border: 2px solid #f9089d; */
+    margin: 0 0 10px;
+}
+
+.call-to-action {
+    /* border: 2px solid #08edf9; */
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a {
+    background-color: grey;
+    color: #fff;
+    padding: 08px 13px;
+    /* margin: 0; */
+    display: block;
+    border: 1px solid transparent;
+}
+
+.call-to-action a:hover {
+    background-color: transparent;
+    color: grey;
+    border: 1px solid grey;
+}
+
+
+
+
+
+footer {
+    background: rgb(7, 188, 143);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:850px){
+    .service-box{
+        flex-basis: 48%;
+        }
+    aside{
+        flex: 0 0 25vw;
+        background: red;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 1280px) {}
+@media screen and (max-width: 1024px) {} */
+
+
+
+@media screen and (max-width: 850px) {
+    .service-box {
+        flex-basis: 48%;
+    }
+
+    aside {
+        flex: 0 0 25vw;
+        /* background: red; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-box {
+        flex-basis: 48%;
+    }
+
+    aside {
+        flex: 0 0 30vw;
+        /* background: red; */
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #logo {
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        font-size: 27px;
+    }
+
+    #menu li {
+        /* border: 1px solid red; */
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #social-links li {
+        padding: 8px;
+    }
+
+    .service-box {
+        flex-basis: 48%;
+    }
+
+    aside {
+        flex: 0 0 35vw;
+        /* background: red; */
+    }
+
+    .service-container {
+        /* border: 2px solid red; */
+        justify-content: center;
+    }
+
+    .service-box {
+        flex-basis: 97%;
+    }
+}
+
+
+
+@media screen and (max-width: 530px) {
+    #logo {
+        /* border: 1px solid red; */
+        margin: 0 auto;
+        font-size: 22px;
+    }
+
+    #menu li {
+        /* border: 1px solid red; */
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    #social-links li {
+        padding: 5px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 440px) {
+    header {
+        flex-direction: column;
+    }
+
+    #logo {
+        order: -1;
+    }   
+
+    article {
+        order: -1;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    article h2 {
+         text-align: center;
+    }
+}
